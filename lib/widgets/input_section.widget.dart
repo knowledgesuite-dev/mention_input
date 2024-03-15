@@ -101,6 +101,7 @@ class InputSection extends StatelessWidget {
                     autofocus: autoFocus ?? false,
                     decoration: InputDecoration(
                         hintText: placeHolder ?? "Aa",
+                        counterText: '',
                         border: InputBorder.none),
                   ),
                 ),
