@@ -86,6 +86,7 @@ class InputSection extends StatelessWidget {
                 ),
                 Expanded(
                   child: TextField(
+                    autofillHints: [AutofillHints.username, AutofillHints.email, AutofillHints.name, AutofillHints.telephoneNumber],
                     minLines: minLines,
                     maxLines: maxLines,
                     maxLength: maxLength,
