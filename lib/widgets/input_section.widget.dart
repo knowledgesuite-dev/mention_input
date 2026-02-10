@@ -88,6 +88,7 @@ class InputSection extends StatelessWidget {
                 ),
                 Expanded(
                   child: TextField(
+                    autofillHints: [AutofillHints.username, AutofillHints.email, AutofillHints.name, AutofillHints.telephoneNumber],
                     textInputAction: TextInputAction.send,
                     minLines: minLines,
                     maxLines: maxLines,
@@ -104,6 +105,11 @@ class InputSection extends StatelessWidget {
                     autofocus: autoFocus ?? false,
                     decoration: InputDecoration(
                         hintText: placeHolder ?? "Aa",
+                        hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xffa9acaa),
+                        ),
+                        counterText: '',
                         border: InputBorder.none),
                   ),
                 ),
