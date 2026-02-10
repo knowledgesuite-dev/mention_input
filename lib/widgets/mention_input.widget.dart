@@ -326,6 +326,8 @@ class _MentionInputState extends State<MentionInput> {
     updateAllMentionWords();
 
     _controller.allMentionWords = allMentionWords;
+
+    _suggestionListener();
   }
 
   @override
